@@ -21,6 +21,8 @@ const Header: React.FC<HeaderProps> = ({ name, imageUrl }) => {
         className={styles.profileImage}
         width={100}
         height={100}
+        quality={95}
+        priority
       />
       <motion.h1
         className={styles.name}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <img
+      alt="John Doe"
+      class="profileImage"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="100"
+      src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1619996107119-31de3403d467%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZpbGUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%253D&w=256&q=95"
+      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1619996107119-31de3403d467%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZpbGUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%253D&w=128&q=95 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1619996107119-31de3403d467%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZpbGUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%253D&w=256&q=95 2x"
+      style="color: transparent;"
+      width="100"
+    />
+    <h1
+      class="name"
+      style="opacity: 0; transform: translateY(-20px) translateZ(0);"
+    >
+      John Doe
+    </h1>
+  </header>
+</div>
+`;
