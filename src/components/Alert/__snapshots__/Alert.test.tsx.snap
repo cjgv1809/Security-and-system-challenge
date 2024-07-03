@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert matches snapshot 1`] = `
+<div>
+  <div
+    class="alert info"
+    role="alert"
+  >
+    <p
+      class="message"
+    >
+      This is an alert
+    </p>
+  </div>
+</div>
+`;
