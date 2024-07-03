@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Component should match the snapshot 1`] = `
+<div>
+  <div
+    class="tabs"
+  >
+    <ul
+      aria-label="Pestañas"
+      class="tabList"
+      role="tablist"
+    >
+      <li
+        class="tabItem"
+      >
+        <button
+          aria-controls="tabpanel-0"
+          aria-selected="true"
+          class="tab activeTab"
+          id="tab-0"
+          role="tab"
+          style="opacity: 0; transform: translateX(-20px) translateZ(0);"
+          type="button"
+        >
+          Tab 1
+        </button>
+      </li>
+      <li
+        class="tabItem"
+      >
+        <button
+          aria-controls="tabpanel-1"
+          aria-selected="false"
+          class="tab "
+          id="tab-1"
+          role="tab"
+          style="opacity: 0; transform: translateX(-20px) translateZ(0);"
+          type="button"
+        >
+          Tab 2
+        </button>
+      </li>
+      <li
+        class="tabItem"
+      >
+        <button
+          aria-controls="tabpanel-2"
+          aria-selected="false"
+          class="tab "
+          id="tab-2"
+          role="tab"
+          style="opacity: 0; transform: translateX(-20px) translateZ(0);"
+          type="button"
+        >
+          Tab 3
+        </button>
+      </li>
+    </ul>
+    <div
+      class="content"
+    >
+      <div
+        aria-labelledby="tab-0"
+        class="activeContent"
+        id="tabpanel-0"
+        role="tabpanel"
+        style="opacity: 0; transform: translateY(-40px) translateZ(0);"
+      >
+        Content 1
+      </div>
+    </div>
+  </div>
+</div>
+`;
