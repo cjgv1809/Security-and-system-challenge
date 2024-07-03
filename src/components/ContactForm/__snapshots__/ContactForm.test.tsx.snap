@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm Component should match the snapshot 1`] = `
+<div>
+  <section
+    class="contactForm"
+  >
+    <h2
+      class="title"
+    >
+      Contacto
+    </h2>
+    <form
+      class="form"
+    >
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+          for="name"
+        >
+          Nombre
+        </label>
+        <input
+          class="input"
+          id="name"
+          name="name"
+          placeholder="Ingresa tu nombre"
+          required=""
+          type="text"
+        />
+      </div>
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="input"
+          id="email"
+          name="email"
+          placeholder="Ingresa tu email"
+          required=""
+          type="email"
+        />
+      </div>
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+          for="message"
+        >
+          Mensaje
+        </label>
+        <textarea
+          class="textarea"
+          id="message"
+          name="message"
+          placeholder="Escribe tu mensaje"
+          required=""
+          rows="5"
+        />
+        <p
+          class="helperText"
+        >
+          El mensaje debe contener al menos 10 caracteres
+        </p>
+      </div>
+      <button
+        class="button"
+        type="submit"
+      >
+        Enviar
+      </button>
+    </form>
+  </section>
+</div>
+`;
