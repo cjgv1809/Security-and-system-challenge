@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interests matches snapshot 1`] = `
+<div>
+  <section
+    class="interests"
+  >
+    <h2
+      class="title"
+    >
+      Intereses
+    </h2>
+    <ul
+      class="list"
+    >
+      <li
+        class="item"
+      >
+        Coding
+      </li>
+      <li
+        class="item"
+      >
+        Reading
+      </li>
+      <li
+        class="item"
+      >
+        Traveling
+      </li>
+    </ul>
+  </section>
+</div>
+`;

@@ -10,11 +10,15 @@ const Interests: React.FC<InterestsProps> = ({ interests }) => {
     <section className={styles.interests}>
       <h2 className={styles.title}>Intereses</h2>
       <ul className={styles.list}>
-        {interests.map((interest, index) => (
-          <li key={index} className={styles.item}>
-            {interest}
-          </li>
-        ))}
+        {interests.length > 0 ? (
+          interests.map((interest, index) => (
+            <li key={index} className={styles.item}>
+              {interest}
+            </li>
+          ))
+        ) : (
+          <span className={styles.noItemText}>No hay intereses</span>
+        )}
       </ul>
     </section>
   );

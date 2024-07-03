@@ -18,15 +18,20 @@
 .list {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
 }
 
 .item {
   font-size: 1rem;
   color: var(--color-item-text);
-  margin-bottom: 0.3125rem;
   padding: 0.3125rem 0.625rem;
   background-color: var(--color-item-background);
   border-radius: 15px;
-  display: inline-block;
-  margin-right: 0.625rem;
+}
+
+.noItemText {
+  font-size: 1rem;
+  color: var(--color-text-light);
 }
