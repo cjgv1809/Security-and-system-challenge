@@ -15,7 +15,7 @@ export default function Home() {
     interests: [
       "Desarrolo web",
       "Desarrollo móvil",
-      "Analisis de datos",
+      "Análisis de datos",
       "Diseño UI/UX",
     ],
   };
