@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import styles from "./ContactForm.module.css";
-import { submitForm } from "@/actions/submitForm";
+import { submitForm, SubmitResult } from "@/actions/submitForm";
 import Alert from "../Alert/Alert";
 import type { AlertType } from "@/app/types";
 
@@ -21,24 +21,31 @@ const ContactForm: React.FC = () => {
     };
 
     try {
-      const result = await submitForm(formFields);
-      console.log(result);
+      const result: SubmitResult = await submitForm(formFields);
 
       if (result.success) {
         setAlert({ type: "success", message: "Mensaje enviado exitosamente" });
+        formRef.current?.reset(); // Reset form fields
       } else {
-        setAlert({
-          type: "error",
-          message: result.errors?.message[0] || "Error al enviar el formulario",
-        });
+        // Handle specific validation errors
+        if (result.errors?.email?.includes("Email inválido")) {
+          setAlert({
+            type: "error",
+            message: "Email inválido. Introduce un email válido.",
+          });
+        } else {
+          setAlert({
+            type: "error",
+            message:
+              result.errors?.message[0] || "Error al enviar el formulario",
+          });
+        }
       }
-      formRef.current?.reset();
     } catch (error) {
       setAlert({
         type: "error",
         message: "Error inesperado al enviar el formulario",
       });
-      formRef.current?.reset();
     }
   };
 

@@ -10,18 +10,14 @@ const FormSchema = z.object({
 
 type FormData = z.infer<typeof FormSchema>;
 
-type SubmitResult = {
+export type SubmitResult = {
   success: boolean;
   error?: string;
   errors?: Record<string, string[]>;
 };
 
-export async function submitForm({
-  name,
-  email,
-  message,
-}: FormData): Promise<SubmitResult> {
-  const validatedFields = FormSchema.safeParse({ name, email, message });
+async function validateFormData(formData: FormData): Promise<SubmitResult> {
+  const validatedFields = FormSchema.safeParse(formData);
 
   if (!validatedFields.success) {
     return {
@@ -31,7 +27,17 @@ export async function submitForm({
     };
   }
 
-  console.log("Formulario recibido:", validatedFields.data);
+  return { success: true };
+}
+
+export async function submitForm(formData: FormData): Promise<SubmitResult> {
+  const validation = await validateFormData(formData);
+
+  if (!validation.success) {
+    return validation; // Return validation errors
+  }
+
+  console.log("Formulario recibido y validado:", formData);
 
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
