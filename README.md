@@ -51,7 +51,7 @@ Para correr el proyecto, siga los siguientes pasos:
 1. Clona el repositorio:
 
    ```sh
-   git clone https://github.com/tu-usuario/task-manager.git
+   git clone https://github.com/cjgv1809/Security-and-system-challenge.git
    cd security-and-system-challenge
    ```
 
