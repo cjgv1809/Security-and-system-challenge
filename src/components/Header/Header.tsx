@@ -14,9 +14,7 @@ const Header: React.FC<HeaderProps> = ({ name, imageUrl }) => {
   return (
     <header className={styles.header}>
       <Image
-        src={
-          "https://images.unsplash.com/photo-1619996107119-31de3403d467?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZpbGUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D"
-        }
+        src={imageUrl}
         alt={name}
         className={styles.profileImage}
         width={100}

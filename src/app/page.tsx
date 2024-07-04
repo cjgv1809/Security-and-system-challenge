@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 export default function Home() {
   const userInfo = {
     name: "Carlos Gomes",
-    imageUrl: "/path-to-image.jpg",
+    imageUrl: "/user.png",
     description:
       "Soy un desarrollador web/mobile apasionado por crear experiencias digitales únicas.",
     interests: [
