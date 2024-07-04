@@ -2,7 +2,7 @@
 
 ## Objetivo: Crear una página web de un perfil de usuario que incluya información básica, una lista de intereses y una sección de contacto.
 
-Requisitos
+### Requisitos
 
 **HTML y CSS:**
 
@@ -31,39 +31,62 @@ Maquetar una página web que incluya:
 - Un repositorio de GitHub con el código del proyecto.
 - Un archivo README.md que explique cómo instalar y ejecutar el proyecto.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Características
 
-## Getting Started
+### Tecnologías Usadas
 
-First, run the development server:
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Un superconjunto de JavaScript que añade tipos estáticos.
+- **Next.js**: Un framework de React que permite la renderización del lado del servidor y la generación de sitios estáticos.
+- **CSS Modules**: Una forma de escribir CSS modular y con ámbito local para evitar colisiones de nombres.
+- **Jest**: Un marco de pruebas de JavaScript que permite escribir pruebas unitarias y de integración.
+- **React Testing Library**: Una biblioteca de pruebas para React que hace que las pruebas sean más accesibles y centradas en el usuario.
+- **Framer Motion**: Una biblioteca para animaciones en React que facilita la creación de animaciones complejas.
+- **Zod**: Una biblioteca para la validación y análisis de esquemas en TypeScript.
+
+## Instalación
+
+Para correr el proyecto, siga los siguientes pasos:
+
+1. Clona el repositorio:
+
+   ```sh
+   git clone https://github.com/tu-usuario/task-manager.git
+   cd security-and-system-challenge
+   ```
+
+2. Instala las dependencias:
+
+   ```sh
+   pnpm install
+   ```
+
+3. Ejecuta el servidor de desarrollo:
+
+   ```bash
+   pnpm run dev
+   ```
+
+4. Abre http://localhost:3000 en tu navegador para ver el sitio web.
+
+## Tests
+
+Para correr los tests, puedes utilizar el siguiente comando:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Aprende Más
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para aprender más sobre las tecnologías usadas en este proyecto, echa un vistazo a los siguientes recursos:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Documentación de React](https://reactjs.org/docs/getting-started.html) - aprende sobre las características y la API de React.
+- [Documentación de TypeScript](https://www.typescriptlang.org/docs/) - aprende sobre el superconjunto de JavaScript con tipos estáticos.
+- [Documentación de Next.js](https://nextjs.org/docs) - aprende sobre las características y la API de Next.js.
+- [Aprende Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
+- [Documentación de CSS Modules](https://github.com/css-modules/css-modules) - aprende cómo escribir CSS modular y con ámbito local.
+- [Documentación de Jest](https://jestjs.io/docs/en/getting-started) - aprende sobre el marco de pruebas de JavaScript.
+- [Documentación de React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - aprende sobre la biblioteca de pruebas para React.
+- [Documentación de Framer Motion](https://www.framer.com/motion/) - aprende sobre la biblioteca de animaciones para React.
+- [Documentación de Zod](https://zod.dev/) - aprende sobre la biblioteca para la validación y análisis de esquemas en TypeScript.
