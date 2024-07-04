@@ -27,7 +27,12 @@ const Alert: React.FC<AlertProps> = ({ type, message, onClose }) => {
     <div className={`${styles.alert} ${styles[type]}`} role="alert">
       <p className={styles.message}>{message}</p>
       {onClose && (
-        <button type="button" className={styles.closeButton} onClick={onClose}>
+        <button
+          type="button"
+          className={styles.closeButton}
+          onClick={onClose}
+          aria-label="Cerrar alerta"
+        >
           &times;
         </button>
       )}
