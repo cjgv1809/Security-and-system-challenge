@@ -17,7 +17,8 @@
 }
 
 .closeButton {
-  background: none;
+  background-color: transparent;
+  color: var(--color-secondary);
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
